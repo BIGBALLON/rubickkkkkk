@@ -1,0 +1,88 @@
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+# Exception: bundled Three.js for Nebula WebView (no CDN dependency)
+!apps/Rubick/Resources/nebula/lib/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.venv/
+venv/
+ENV/
+env/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+
+# Xcode / SwiftPM
+build/
+*.xcodeproj/
+*.xcworkspace/
+xcuserdata/
+DerivedData/
+.swiftpm/
+
+# Tuist
+Derived/
+Tuist/Dependencies/Lockfiles/
+**/Tuist/.tuist-version
+# Tuist-generated workspace & project files — re-created by `tuist generate`.
+# Project.swift / Tuist.swift are the source of truth.
+Rubick.xcworkspace/
+Rubick.xcodeproj/
+.tuist-generated
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*~
+
+# Logs / local cache
+*.log
+.cache/
+logs/
+
+# User data (should never be checked in). Anchored to repo root so they
+# don't accidentally swallow source folders like
+# `apps/Rubick/Sources/Models/` or `apps/.../data/`.
+# (`~/Library/Application Support/Rubick/` is the runtime data dir and
+# isn't inside the repo anyway, but we keep the pattern around as a
+# breadcrumb for future contributors.)
+/data/
+/models/
+/thumbnails/
+
+# Distribution
+*.dmg
+*.app
+
+# Superpowers brainstorm sessions
+.superpowers/
+
+# Secrets
+.env
+.env.local
+*.key
+.claude/worktrees/
